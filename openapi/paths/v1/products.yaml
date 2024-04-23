@@ -16,10 +16,10 @@ get:
       content: 
         application/json:
           schema: 
-            $ref: ..\..\components\schemas\Problem.yaml
+            $ref: ../../components/schemas/Problem.yaml
     '404':
       description: Not found
       content: 
         application/json:
           schema: 
-            $ref: ..\..\components\schemas\Problem.yaml
+            $ref: ../../components/schemas/Problem.yaml
