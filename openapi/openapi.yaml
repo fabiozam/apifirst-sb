@@ -25,19 +25,16 @@ externalDocs:
 tags:
   - name: Customer
     description: "Customer operations."
-  - name: User
-    description: "Example actions on user accounts."
-#  - name: Admin
-#    description: "Example operations reserved for administrators."
-#  - name: Info
-#    description: "Example operations for retrieving information."
-#  - name: Tag
-#    description: "This is a tag description."
+  - name: Products
+    description: "Product operations."
+  - name: Orders
+    description: "Orders operations."
 x-tagGroups:
   - name: General
     tags:
       - Customer
       - Product
+      - Order
 servers:
   - url: https://{tenant}/api/v1
     variables:
