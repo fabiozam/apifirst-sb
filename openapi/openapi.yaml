@@ -46,18 +46,18 @@ servers:
         description: Your tenant id
   - url: https://example.com/api/v1
 paths:
-  '/v1/customers':
-    $ref: 'paths/v1/customers.yaml'
-  '/v1/customers/{customerId}':
-    $ref: 'paths/v1/customers_{customerid}.yaml'
-  '/v1/products':
-    $ref: 'paths/v1/products.yaml'
-  '/v1/products/{productId}':
-    $ref: 'paths/v1/products_{productid}.yaml'
-  '/v1/orders':
-    $ref: paths\v1/orders.yaml
-  '/v1/orders_{orderId}':
-    $ref: paths\v1/orders_{orderId}.yaml
+  /v1/customers:
+    $ref: paths/v1/customers.yaml
+  /v1/customers/{customerId}:
+    $ref: paths/v1/customers_{customerid}.yaml
+  /v1/products:
+    $ref: paths/v1/products.yaml
+  /v1/products/{productId}:
+    $ref: paths/v1/products_{productid}.yaml
+  /v1/orders:
+    $ref: paths/v1/orders.yaml
+  /v1/orders_{orderId}:
+    $ref: paths/v1/orders_{orderId}.yaml
 security: 
   -  basic_auth: []
 components:
