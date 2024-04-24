@@ -12,12 +12,16 @@ properties:
   billToAddress:
     $ref: address.yaml
   email:
-    type: string
+    type: 
+      - string
+      - 'null'
     maxLength: 255
     minLength: 3
     example: fabiozam02@gmail.com
   phone:
-    type: string
+    type: 
+      - string
+      - 'null'
     maxLength: 15
     minLength: 7
   paymentMethods:
