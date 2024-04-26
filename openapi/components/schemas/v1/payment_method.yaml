@@ -17,8 +17,6 @@ properties:
   cvv:
     type: integer
   dateCreated:
-    type: string
-    format: date-time 
+    $ref: ../common/iso_timestamp.yaml 
   dateUpdated:
-    type: string
-    format: date-time
+    $ref: ../common/iso_timestamp.yaml
