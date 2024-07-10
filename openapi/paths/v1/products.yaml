@@ -1,6 +1,6 @@
 get:
   tags:
-    - Product
+    - Products
   summary: Get list of products
   description: Get list of products
   operationId: listProducts
