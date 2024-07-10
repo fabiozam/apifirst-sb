@@ -1,6 +1,6 @@
 get:
   tags:
-    - Product
+    - Products
   summary: Get list of products
   description: Get list of products
   operationId: listProducts
@@ -19,6 +19,33 @@ get:
             $ref: ../../components/schemas/Problem.yaml
     '404':
       description: Not found
+      content: 
+        application/json:
+          schema: 
+            $ref: ../../components/schemas/Problem.yaml
+post: 
+  tags: 
+    -  Products
+  summary: Create a new product
+  description: Create a new product
+  operationId: createProduct
+  requestBody: 
+    content: 
+      application/json:
+        schema: 
+          $ref: ../../components/schemas/v1/product.yaml
+  responses:
+    '201':
+      description: Created
+      headers: 
+        Location:
+          description: New product Location
+          schema: 
+            type: string
+            format: uri
+            example: /v1/products/27sd1234-s123-45s5-sadds2s21dds
+    '400':
+      description: Bad request
       content: 
         application/json:
           schema: 

@@ -33,7 +33,7 @@ x-tagGroups:
   - name: General
     tags:
       - Customer
-      - Product
+      - Products
       - Order
 servers:
   - url: https://{tenant}/api/v1
