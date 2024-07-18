@@ -27,7 +27,7 @@ post:
     content: 
       application/json:
         schema: 
-          $ref: ..\..\components\schemas\v1/order_create.yaml
+          $ref: ../../components/schemas/v1/order_create.yaml
   responses:
     '200':
       description: Success
@@ -36,7 +36,7 @@ post:
           schema: 
             type: string
           description: Path to the created order
-          example: /v1/orders/27cd1254-s1s2-12rr-8r5r-12586ghjrd
+          example: /v1/orders/27ca5995-f6e1-46bb-8f18-52458b7ed96e
     '400':
       description: Bad Request 
       $ref: ../../components/schemas/Problem.yaml 
